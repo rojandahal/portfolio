@@ -6,10 +6,10 @@ import "./header.css";
 export default function Header() {
   return (
     <>
-      <ul>
+      <div className="header-container">
         <Menu />
         <Button background="#d465ef" text={"Contact Me"}></Button>
-      </ul>
+      </div>
     </>
   );
 }
