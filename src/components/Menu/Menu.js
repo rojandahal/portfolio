@@ -1,10 +1,11 @@
 import React from "react";
-import "./menu.css"
+import "./menu.css";
 
 export default function Menu() {
   return (
     <>
-      <ul>
+      <ul className="menu-ul">
+        <li className="float-left">Rojan Dahal</li>
         <li>Home</li>
         <li>About</li>
         <li>Services</li>

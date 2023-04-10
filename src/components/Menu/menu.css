@@ -1,12 +1,23 @@
-ul {
+.menu-ul {
+  display: inline;
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 
 li {
-  display: inline-block;
+  display: inline;
   font-size: 16px;
+  color: white;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;    
+}
+
+li:hover {
+    color:aqua;
+    cursor: pointer;
+}
+
+.float-left:hover {
+    font-size: 18px;
 }
