@@ -5,3 +5,8 @@
   border-radius: 4px;
   border: none;
 }
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
