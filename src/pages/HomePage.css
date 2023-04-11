@@ -23,3 +23,8 @@
     flex-direction: column;
   }
 }
+
+.project-container .project-card-container {
+  margin: 20px;
+}
+
