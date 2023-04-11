@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./header.css";
 import Typed from "typed.js";
-import Navbar from "./Navbar";
+import Menu from "../Menu/Menu"
 
 export default function Header() {
   const el = useRef(null);
@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
-        <Navbar />
+        <Menu />
         <div className="type-animation" ref={el}></div>
       </div>
     </>

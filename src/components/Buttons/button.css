@@ -28,3 +28,21 @@
   background-color: #041629;
   color: white;
 }
+
+.button-send {
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #c1c1c1;
+  color: white;
+  margin: 10px;
+  border: solid 1px #041629;
+}
+
+.button-send:hover {
+  cursor: pointer;
+  border: none;
+  padding: 16px 33px;
+  background-color: #041629;
+}
