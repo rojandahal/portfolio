@@ -1,0 +1,34 @@
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.navbar h2 {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  color: white;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-top: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #d465ef;
+  color: black;
+}
+
+.navbar button {
+  float: right;
+  background-color: #d465ef;
+  margin-right: 70px;
+}
