@@ -1,0 +1,8 @@
+.container-about-me {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #041629;
+  justify-items: center;
+  padding: 15px;
+}
