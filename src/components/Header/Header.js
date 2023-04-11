@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from "react";
-import Menu from "../Menu/Menu";
 import "./header.css";
 import Typed from "typed.js";
+import Navbar from "./Navbar";
 
 export default function Header() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["<i>I am</i> a programmer.", "Developer", "Designer", "I am Rojan Dahal"],
+      strings: [
+        "<i>I am</i> a programmer.",
+        "Developer",
+        "Designer",
+        "I am Rojan Dahal",
+      ],
       typeSpeed: 50,
       loop: true,
     });
@@ -20,7 +25,7 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
-        <Menu />
+        <Navbar />
         <div className="type-animation" ref={el}></div>
       </div>
     </>
