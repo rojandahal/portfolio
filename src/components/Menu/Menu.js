@@ -2,7 +2,7 @@ import React from "react";
 import "./menu.css";
 import Button from "../Buttons/Button";
 
-export default function Menu() {
+function Menu() {
   return (
     <>
       <div class="navbar">
@@ -16,3 +16,5 @@ export default function Menu() {
     </>
   );
 }
+
+export default Menu;

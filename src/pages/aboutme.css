@@ -1,7 +1,7 @@
 .about-me {
   height: 50vh;
   width: 100%;
-  background-color:#d365ef56;
+  background-color: #d365ef56;
 }
 
 .container-about-me {
@@ -35,13 +35,13 @@
   .container-about-me {
     flex-direction: column;
   }
-
   .container-about-me > img {
-
+    width: 250px;
+    max-width: 100%;
+    border-radius: 450px;
+    margin-top: 30px;
   }
   .about-me {
     height: auto;
   }
 }
-
-

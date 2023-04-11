@@ -32,3 +32,8 @@
   background-color: #d465ef;
   margin-right: 70px;
 }
+
+.navbar-scroll {
+  background-color: #d465ef;
+  transition: background-color 0.2s ease-out;
+}
