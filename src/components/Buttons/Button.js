@@ -9,7 +9,7 @@ export default function Button(props) {
   return (
     <>
       <button
-        className="button"
+        className={props.newClass}
         style={{ backgroundColor: props.background }}
         onClick={clickHandler}
       >

@@ -1,12 +1,30 @@
-.button {
+.button-contact {
   text-align: center;
   padding: 15px 32px;
   font-size: 16px;
   border-radius: 4px;
+  background-color: "#d465ef";
   border: none;
 }
 
-.button:hover {
+.button-contact:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
+}
+
+.button-download {
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: white;
+  margin: 30px;
+  border: solid 1px #041629;
+}
+
+.button-download:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #041629;
+  color: white;
 }
