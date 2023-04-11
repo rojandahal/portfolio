@@ -1,16 +1,18 @@
 import React from "react";
 import "./menu.css";
+import Button from "../Buttons/Button";
 
 export default function Menu() {
   return (
     <>
-      <ul className="menu-ul">
-        <li className="float-left">Rojan Dahal</li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Blogs</li>
-      </ul>
+      <div class="navbar">
+        <h2>Rojan Dahal</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#blog">Blogs</a>
+        <Button newClass={"button-contact"} text={"Contact Me"}></Button>
+      </div>
     </>
   );
 }
