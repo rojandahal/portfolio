@@ -55,12 +55,12 @@ export default function HomePage() {
         ></ProjectCard>
       </div>
 
-      <div className="testimonial-container">
-        <Testimonial></Testimonial>
-      </div>
-
       <div className="about-me-container">
         <AboutMe></AboutMe>
+      </div>
+      
+      <div className="testimonial-container">
+        <Testimonial></Testimonial>
       </div>
     </div>
   );
