@@ -4,8 +4,8 @@ import "./card.css";
 export default function Card(props) {
   return (
     <>
-      <div className="card">
-        <img src="#" alt="#" />
+      <div className={props.cardClass}>
+        <img src={props.image} alt="#" />
         <h2>{props.title}</h2>
         <span>{props.description}</span>
       </div>
