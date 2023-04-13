@@ -3,21 +3,39 @@ import "./menu.css";
 import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
 
-function Menu() {
+export default function Menu() {
   return (
     <>
-      <div class="navbar">
-        <h2>Rojan Dahal</h2>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <a href="#service">Service</a>
-        <a href="#blog">Blogs</a>
-        <Link to="/contact" className="button">
-          <Button newClass={"button-contact"} text={"Contact Me"}></Button>
-        </Link>
+      <div className="nav-container">
+        <div class="navbar">
+          <div className="logo">
+            <Link to="/">Rojan Dahal </Link>
+          </div>
+
+          <div className="nav-contents">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/">Services</Link>
+              </li>
+              <li>
+                <Link to="/">Blogs</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="button">
+            <Link to="/contact">
+              <Button newClass={"button-contact"} text={"Contact Me"}></Button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
 }
-
-export default Menu;

@@ -1,12 +1,10 @@
 import React from 'react'
 import "./contact.css"
 import Button from '../../components/Buttons/Button'
-import Menu from '../../components/Menu/Menu'
 
 function Contact() {
   return (
     <>
-    <Menu/>
     <div className="container">
         <div className="wrapper">
             <div className="title">
