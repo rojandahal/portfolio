@@ -36,7 +36,7 @@ export default function AboutMe() {
 
       <div className="about-me">
         <div className="container-about-me">
-          <img src={me} alt="" srcset="" />
+          <img src={me} alt="" />
           <div className="about-me-description">
             <h3>Title</h3>
             <span>

@@ -1,35 +1,39 @@
 .project-card-container {
   position: relative;
-  width: 20%;
+  width: 50%;
   padding: 20px;
 }
 
 .image {
-  opacity: 1;
   display: block;
   width: 100%;
   transition: 0.5s ease;
-  backface-visibility: hidden;
 }
 
 .middle-text {
   position: absolute;
+  width: 100%;
+  height: 100%;
   transition: 0.5s ease;
-  opacity: 0;
-  top: 40%;
-  left: 40%;
-  transform: translate(0, 50%);
+  display: none;
+  top: 0;
+  justify-content: center;
   text-align: center;
 }
 
 .project-card-container:hover .image {
-  opacity: 0.2;
   cursor: pointer;
 }
 
 .project-card-container:hover .middle-text {
-  opacity: 1;
-  color: #6d41e0;
+  display: flex;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+  transition: 0.5s ease-out;
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  color: #3b00d1;
 }
 
 @media screen and (max-width: 600px) {
