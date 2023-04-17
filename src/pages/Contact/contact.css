@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 500px;
   padding-top: 20px;
-  background-color: #fff;
+  background-color: #d365ef9b;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -29,7 +29,7 @@
   width: 100%;
   max-width: 500px;
   padding: 20px;
-  background-color: #c1c1c1;
+  background-color: #041629;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -50,4 +50,11 @@
   border: 1px solid #000000;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    width: 100%;
+    max-width: 80%;
+  }
 }

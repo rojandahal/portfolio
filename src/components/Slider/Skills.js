@@ -1,10 +1,10 @@
 import React from "react";
 import "./skills.css";
 import Card from "../Cards/Card";
-import imgJs from "../../assets/java-script.png"
-import imgReact from "../../assets/atom.png"
-import imgJava from "../../assets/java.png"
-import imgNode from "../../assets/node-js.png"
+import imgJs from "../../assets/png/java-script.png";
+import imgReact from "../../assets/png/atom.png";
+import imgJava from "../../assets/png/java.png";
+import imgNode from "../../assets/png/node-js.png";
 
 export default function Skills() {
   return (

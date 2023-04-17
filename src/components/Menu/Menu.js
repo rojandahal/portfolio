@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./menu.css";
 import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
-import menuIcon from "../../assets/menu-hamburger.svg";
+import menuIcon from "../../assets/svg/menu-hamburger.svg";
 
 export default function Menu() {
   const [toggle, setToggle] = useState("close");

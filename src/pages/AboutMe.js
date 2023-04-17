@@ -1,11 +1,11 @@
 import React from "react";
-import me from "../assets/me.jpg";
+import me from "../assets/png/me.jpg";
 import "./aboutme.css";
 import Skills from "../components/Slider/Skills";
 import ProjectCard from "../components/Cards/ProjectCard";
-import mobileImage from "../assets/mobile.jpg";
-import laptopImage from "../assets/laptopimage.jpg";
-import backgroundImage from "../assets/background.jpg";
+import mobileImage from "../assets/png/mobile.jpg";
+import laptopImage from "../assets/png/laptopimage.jpg";
+import backgroundImage from "../assets/png/background.jpg";
 
 export default function AboutMe() {
   return (

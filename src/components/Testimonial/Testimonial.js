@@ -1,5 +1,5 @@
 import React from "react";
-import quote from "../../assets/quote.svg";
+import quote from "../../assets/svg/quote.svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./testimonial.css";
