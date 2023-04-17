@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Menu from "./components/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function Layout() {
     <>
       <Menu />
       <Outlet />
+      <Footer/>
       {/* componentharu */}
     </>
   );
