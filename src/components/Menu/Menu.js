@@ -46,9 +46,6 @@ export default function Menu() {
               <li>
                 <Link to="/">Services</Link>
               </li>
-              <li>
-                <Link to="/">Blogs</Link>
-              </li>
             </ul>
           </div>
 

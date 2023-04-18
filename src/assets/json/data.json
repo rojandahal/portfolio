@@ -1,0 +1,35 @@
+{
+    "projects": [
+        {
+            "projectTitle":"Portfolio",
+            "url":"https://github.com/rojandahal/portfolio",
+            "image":"portfolio.jpg",
+            "username":"rojandahal"
+        },
+        {
+            "projectTitle":"Recipe Organizer App",
+            "url":"https://github.com/rojandahal/recipe-organizer-app",
+            "image":"recipe.jpg",
+            "username":"rojandahal"
+        },
+        {
+            "projectTitle":"Music Streaming App",
+            "url":"https://github.com/rojandahal/bhaka-streaming-android-app",
+            "image":"music.jpg",
+            "username":"rojandahal"
+        },
+        {
+            "projectTitle":"Amazon Clone",
+            "url":"https://github.com/rojandahal/amazon-clone",
+            "image":"amazon-clone.png",
+            "username":"rojandahal"
+        },
+        {
+            "projectTitle":"Foodhub App",
+            "url":"https://github.com/rojandahal/FoodHub",
+            "image":"food.jpg",
+            "username":"rojandahal"
+        }
+        ]
+}
+    
