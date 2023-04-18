@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Card from "../components/Cards/Card";
 import "./HomePage.css";
 import Testimonial from "../components/Testimonial/Testimonial";
-import Resume from "../assets/rojan_resume.pdf";
+import Resume from "../assets/pdf/rojan_resume.pdf";
 import Button from "../components/Buttons/Button";
 import AboutMe from "./AboutMe";
 
