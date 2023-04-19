@@ -3,7 +3,7 @@ import "./menu.css";
 import Button from "../Buttons/Button";
 import { Link, NavLink } from "react-router-dom";
 import menuIcon from "../../assets/svg/menu-hamburger.svg";
-import data from "../../assets/pdf/data.json";
+import data from "../../assets/json/data.json";
 
 export default function Menu() {
   const [toggle, setToggle] = useState("close");

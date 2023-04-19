@@ -13,6 +13,7 @@ figure {
 
 .image {
   object-fit: cover;
+  transition: transform 0.2s;
 }
 
 .card-body {
@@ -35,6 +36,10 @@ figure {
 figure:hover .card-body {
   backdrop-filter: blur(5px);
   transform: translate(0, 0);
+}
+
+figure:hover .image {
+  transform: scale(1.2, 1.2);
 }
 
 .card-body > a {

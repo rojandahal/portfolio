@@ -6,7 +6,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Resume from "../assets/pdf/rojan_resume.pdf";
 import Button from "../components/Buttons/Button";
 import AboutMe from "./AboutMe";
-import data from "../assets/pdf/data.json";
+import data from "../assets/json/data.json";
 
 function HomePage() {
   const [dataItems, setDataItems] = useState([]);

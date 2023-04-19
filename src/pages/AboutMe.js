@@ -1,8 +1,9 @@
 import React from "react";
 import me from "../assets/png/me.jpg";
 import "./aboutme.css";
-import Skills from "../components/Slider/Skills";
+import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects.js";
+import data from "../assets/json/data.json";
 
 export default function AboutMe() {
   return (
@@ -29,11 +30,8 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-
-      <div className="skills-section">
-        <h2>Skills</h2>
-        <Skills />
-      </div>
+      
+      <Skills />
     </>
   );
 }
