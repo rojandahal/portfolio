@@ -60,7 +60,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .project-container {
     height: 100vh;
   }
@@ -83,9 +82,9 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width:1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .project-container {
-    height: 50vh
+    height: 50vh;
   }
   .project-cards-container {
     flex-direction: row;

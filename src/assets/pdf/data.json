@@ -1,0 +1,37 @@
+{
+    "links": [
+        {
+        "url": "/",
+        "title": "Home"
+        },
+        {
+        "url": "/about",
+        "title": "About"
+        },
+        {
+        "url": "/contact",
+        "title": "Contact"
+        },
+        {
+        "url": "/blog",
+        "title": "Services"
+        }
+    ],
+    "services": [
+        {
+        "title": "Web Design",
+        "description": "My web design service combines creativity, usability, and branding to create custom websites that captivate users, meet your business needs, and achieve your online goals.",
+        "icon": "a"
+        },
+        {
+        "title": "Web Development",
+        "description": "My web development service provides custom website development, from simple static sites to complex web applications, using the latest technologies to deliver optimal user experiences.",
+        "icon": "b"
+        },
+        {
+        "title": "Mobile App",
+        "description": "My mobile app service creates innovative, engaging, and functional mobile applications for iOS and Android platforms that meet your business objectives and delight your users.",
+        "icon": "c"
+        }
+    ]
+}

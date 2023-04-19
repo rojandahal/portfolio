@@ -5,6 +5,7 @@ import AboutMe from "./pages/AboutMe";
 import Menu from "./components/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<AboutMe />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -27,7 +29,7 @@ function Layout() {
     <>
       <Menu />
       <Outlet />
-      <Footer/>
+      <Footer />
       {/* componentharu */}
     </>
   );

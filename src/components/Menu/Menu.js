@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./menu.css";
 import Button from "../Buttons/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import menuIcon from "../../assets/svg/menu-hamburger.svg";
+import data from "../../assets/pdf/data.json";
 
 export default function Menu() {
   const [toggle, setToggle] = useState("close");
+  const [scroll, setScroll] = useState("");
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 500) {
+      if (window.scrollY >= 500) {
         setToggle("close");
+        setScroll("scrolled");
+      }
+      if (window.scrollY < 500) {
+        setScroll("");
       }
     }
 
@@ -24,12 +30,11 @@ export default function Menu() {
 
   function onClickHandler() {
     toggle === "close" ? setToggle("open") : setToggle("close");
-    console.log(toggle);
   }
-  
+
   return (
     <>
-      <div className="nav-container">
+      <div className={`nav-container ${scroll}`}>
         <div className="navbar">
           <div className="logo">
             <Link to="/">Rojan Dahal </Link>
@@ -37,18 +42,15 @@ export default function Menu() {
 
           <div className="nav-contents">
             <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/">Services</Link>
-              </li>
-              <li>
-                <Link to="/">Blogs</Link>
-              </li>
+              {data.links.map((item, index) => {
+                return (
+                  <li>
+                    <NavLink key={index} to={item.url}>
+                      {item.title}
+                    </NavLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -72,18 +74,15 @@ export default function Menu() {
       <div className={`mobile-navigation ${toggle}`}>
         <div className="mobile-nav-contents">
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/">Services</Link>
-            </li>
-            <li>
-              <Link to="/">Blogs</Link>
-            </li>
+            {data.links.map((i, index) => {
+              return (
+                <li>
+                  <Link key={index} to={i.url}>
+                    {i.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <div className="mobile-nav-btn">
             <Link to="/contact">
