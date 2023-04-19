@@ -1,31 +1,3 @@
-.project-container {
-  position: relative;
-  background-color: #041629;
-  height: 60vh;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-}
-
-.project-text {
-  position: absolute;
-  color: white;
-  top: 10%;
-  left: 30%;
-  right: 30%;
-}
-
-.project-text > span {
-  text-transform: uppercase;
-}
-
-.project-cards-container {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  bottom: -20%;
-}
-
 .about-me {
   height: 50vh;
   width: 100%;
@@ -60,14 +32,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .project-container {
-    height: 100vh;
-  }
-  .project-cards-container {
-    flex-direction: column;
-    align-items: center;
-    bottom: 0;
-  }
   .container-about-me {
     flex-direction: column;
   }
@@ -79,16 +43,5 @@
   }
   .about-me {
     height: auto;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-  .project-container {
-    height: 50vh;
-  }
-  .project-cards-container {
-    flex-direction: row;
-    align-items: center;
-    bottom: 10%;
   }
 }

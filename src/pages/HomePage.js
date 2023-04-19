@@ -20,7 +20,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div>
+    <>
       <Header></Header>
       <div className="download-button">
         <a href={Resume} target="_blank" rel="noreferrer">
@@ -53,7 +53,7 @@ function HomePage() {
       <div className="testimonial-container">
         <Testimonial></Testimonial>
       </div>
-    </div>
+    </>
   );
 }
 

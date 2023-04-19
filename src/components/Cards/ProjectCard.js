@@ -1,13 +1,21 @@
 import React from "react";
 import "./projectcard.css";
 
-export default function ProjectCard({ cardImage, title }) {
+export default function ProjectCard({ cardImage, title, url }) {
   return (
-    <div className="project-card-container">
-      <img className="image" src={cardImage} alt="" />
-      <div className="middle-text">
-        <span className="title">{title}</span>
-      </div>
-    </div>
+    <>
+      <figure>
+        <img
+          className="image"
+          src={require(`../../assets/png/${cardImage}`)}
+          alt="img"
+        />
+        <div className="card-body">
+          <a href={url} target="_blank" rel="noreferrer">
+            {title}
+          </a>
+        </div>
+      </figure>
+    </>
   );
 }

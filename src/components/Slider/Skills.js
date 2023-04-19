@@ -10,10 +10,10 @@ export default function Skills() {
   return (
     <>
       <div className="skills-card-container">
-        <Card image={imgJs} cardClass="card-skills" title={"JavaScript"}></Card>
-        <Card image={imgReact} cardClass="card-skills" title={"React"}></Card>
-        <Card image={imgJava} cardClass="card-skills" title={"Java"}></Card>
-        <Card image={imgNode} cardClass="card-skills" title={"Node"}></Card>
+        <Card icon={imgJs} cardClass="card-skills" title={"JavaScript"}></Card>
+        <Card icon={imgReact} cardClass="card-skills" title={"React"}></Card>
+        <Card icon={imgJava} cardClass="card-skills" title={"Java"}></Card>
+        <Card icon={imgNode} cardClass="card-skills" title={"Node"}></Card>
       </div>
     </>
   );
