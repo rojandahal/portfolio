@@ -9,7 +9,7 @@ import AboutMe from "./AboutMe";
 
 function HomePage() {
   return (
-    <div>
+    <>
       <Header></Header>
       <div className="download-button">
         <a href={Resume} target="_blank" rel="noreferrer">
@@ -38,15 +38,13 @@ function HomePage() {
           ></Card>
         </div>
       </div>
-    
-      <div className="about-me-container">
-        <AboutMe></AboutMe>
-      </div>
+
+      <AboutMe />
 
       <div className="testimonial-container">
         <Testimonial></Testimonial>
       </div>
-    </div>
+    </>
   );
 }
 
