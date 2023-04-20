@@ -3,7 +3,6 @@ import me from "../assets/png/me.jpg";
 import "./aboutme.css";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects.js";
-import data from "../assets/json/data.json";
 
 export default function AboutMe() {
   return (

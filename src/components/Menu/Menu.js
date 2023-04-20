@@ -44,7 +44,7 @@ export default function Menu() {
             <ul>
               {data.links.map((item, index) => {
                 return (
-                  <li>
+                  <li className="nav-items active">
                     <NavLink key={index} to={item.url}>
                       {item.title}
                     </NavLink>

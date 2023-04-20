@@ -52,11 +52,12 @@
 }
 
 .nav-contents > ul > li > a:hover {
+  color: white;
   background-color: #d365ef;
 }
 
-.nav-contents >ul >li:active {
-  background-color: #d365ef;
+.nav-items .active {
+  color: #d365ef;
 }
 .hamburger,
 .nav-chkbox,
