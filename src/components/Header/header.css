@@ -1,30 +1,86 @@
 .header-container {
-  position: relative;
   padding: 20px;
-  background-color: #6d41e0;
-  background-image: url("../../assets/png/header-background.jpg");
+  background: linear-gradient(-45deg, #041629, #4e2d4e, #9c27b0);
+  animation: infinite gradient-bg 15s linear;
+  background-size: 200% 200%;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 95%, 0 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
 }
 
-.header-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* example overlay color */
+.header-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 4vw;
+  align-items: start;
+}
+
+.header-text {
+  width: 40vw;
+  margin-top: 4vh;
+  padding: 10px;
+  text-align: justify;
+  color: white;
 }
 
 .type-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
+  display: inline;
+  font-size: 40px;
   color: white;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+.contact-icon {
+  margin: 0 2rem;
+  font-size: 2vw;
+  color: white;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+@keyframes gradient-bg {
+  0% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 95%, 0 100%);
+    background-position: 0% 50%;
+  }
+  10% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 95%, 0 100%);
+  }
+  20% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 40% 95%, 0 100%);
+  }
+  30% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 60% 95%, 0 100%);
+  }
+  40% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 80% 95%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 95%, 0 100%);
+    background-position: 100% 50%;
+  }
+  60% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 80% 95%, 0 100%);
+  }
+  70% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 60% 95%, 0 100%);
+  }
+  80% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 40% 95%, 0 100%);
+  }
+  90% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 95%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 95%, 0 100%);
+    background-position: 0% 50%;
+  }
 }

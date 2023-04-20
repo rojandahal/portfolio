@@ -21,7 +21,12 @@ function HomePage() {
 
   return (
     <>
-      <Header></Header>
+      {data.contacts.map((item, index) => {
+        // const Icon = lazy(() => import(`react-icons/${item.icons}`).then(icons => icons[props.icon]))
+        return (
+          <Header key={index} id={item.id} link={item.link} icon={item.icon} />
+        );
+      })}
       <div className="download-button">
         <a href={Resume} target="_blank" rel="noreferrer">
           <Button
