@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import menuIcon from "../../assets/svg/menu-hamburger.svg";
 import data from "../../assets/json/data.json";
 
-export default function Menu() {
+export default function Menu({ background }) {
   const [toggle, setToggle] = useState("close");
   const [scroll, setScroll] = useState("");
 
@@ -34,7 +34,7 @@ export default function Menu() {
 
   return (
     <>
-      <div className={`nav-container ${scroll}`}>
+      <div className={`nav-container ${background} ${scroll}`}>
         <div className="navbar">
           <div className="logo">
             <Link to="/">Rojan Dahal </Link>

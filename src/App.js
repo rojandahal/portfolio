@@ -1,11 +1,18 @@
 import "./App.css";
-import { Routes, Route, BrowserRouter, Outlet } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Menu from "./components/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import PageNotFound from "./pages/404/PageNotFound";
+import { useEffect, useState } from "react";
 
 function App() {
   return (
@@ -25,9 +32,18 @@ function App() {
 }
 
 function Layout() {
+  const [navBg, setnavBg] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!(location.pathname === "/")) {
+      setnavBg("colored");
+    } else setnavBg("");
+  }, [location]);
+
   return (
     <>
-      <Menu />
+      <Menu background={navBg} />
       <Outlet />
       <Footer />
       {/* componentharu */}
