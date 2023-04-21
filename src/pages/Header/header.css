@@ -22,16 +22,16 @@
 }
 
 .text-container {
+  z-index: 1;
   grid-column: 1 / 4;
 }
 
 .header-text {
   display: grid;
   grid-column: 3;
-  place-items: center center;
-  grid-template-rows: repeat(2, 1fr);
-  margin-top: 4vh;
-  padding: 10px;
+  font-size: larger;
+  place-items: center;
+  grid-template-rows: repeat(2, 100%);
   text-align: justify;
   color: white;
 }
@@ -45,7 +45,6 @@
 .contact-icons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2vh;
 }
 
 @keyframes gradient-bg {
