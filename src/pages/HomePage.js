@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Header/Header";
+import Header from "./Header/Header";
 import Card from "../components/Cards/Card";
 import "./HomePage.css";
 import Testimonial from "../components/Testimonial/Testimonial";
@@ -21,7 +21,13 @@ function HomePage() {
 
   return (
     <>
-      <Header></Header>
+      {/* {data.contacts.map((item, index) => {
+        // const Icon = lazy(() => import(`react-icons/${item.icons}`).then(icons => icons[props.icon]))
+        return (
+          <Header key={index} id={item.id} link={item.link} icon={item.icon} />
+        );
+      })} */}
+      <Header />
       <div className="download-button">
         <a href={Resume} target="_blank" rel="noreferrer">
           <Button

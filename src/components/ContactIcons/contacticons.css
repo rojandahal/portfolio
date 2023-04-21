@@ -1,0 +1,10 @@
+.contact-icon {
+  margin: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
