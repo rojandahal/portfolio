@@ -32,6 +32,18 @@
   width: 30%;
 }
 
-.card-wrapper {
-  display: inline-block;
+.card-skills:hover img {
+  animation: infinite iconDrop 0.3s ease-in-out;
+}
+
+@keyframes iconDrop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
