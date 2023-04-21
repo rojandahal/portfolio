@@ -1,47 +1,53 @@
 .about-me {
-  height: 50vh;
+  display: grid;
+  place-items: center;
+  margin: 30px 0;
+  position: relative;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.image-about-me {
   width: 100%;
-  background-color: #d365ef56;
+  grid-column: 4/7;
+  z-index: 1;
 }
-
-.container-about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  text-align: justify;
-}
-
-.container-about-me > img {
-  width: 250px;
-  max-width: 40%;
-  border-radius: 450px;
-  margin-top: 30px;
+.image-about-me > img {
+  width: 50%;
+  border-radius: 30px;
 }
 
 .about-me-description {
-  width: 50%;
-  color: black;
-  padding: 40px;
+  text-align: justify;
+  grid-row: 1;
+  grid-column: 2/4;
+  width: 100%;
+  z-index: 1;
 }
 
 .about-me-description > h3 {
   text-align: center;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
-  .container-about-me {
+.background-text {
+  position: absolute;
+  font-size: 6vw;
+  color: aliceblue;
+  left: 5%;
+  bottom: 25%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    display: flex;
     flex-direction: column;
   }
-  .container-about-me > img {
-    width: 250px;
-    max-width: 100%;
-    border-radius: 450px;
-    margin-top: 30px;
+  .image-about-me > img {
+    width: 60%;
   }
-  .about-me {
-    height: auto;
+
+  .background-text {
+    display: none;
   }
 }
