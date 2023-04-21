@@ -1,14 +1,18 @@
 .button-contact {
   background-color: #d365ef;
+  border: 3px solid transparent;
   text-align: center;
+  margin-top: 5px;
   padding: 15px 32px;
   font-size: 16px;
   border-radius: 4px;
-  border: none;
 }
 
 .button-contact:hover {
   cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: 3px solid #041629;
   transform: scale(1.05, 1.05);
 }
 
@@ -19,13 +23,13 @@
   border-radius: 4px;
   background-color: white;
   margin: 30px;
-  border: solid 1px #041629;
+  border: solid 2px #041629;
 }
 
 .button-download:hover {
   cursor: pointer;
-  border: none;
   background-color: #041629;
+  border: solid 2px transparent;
   color: white;
 }
 
@@ -45,4 +49,23 @@
   border: none;
   padding: 16px 33px;
   background-color: #d365ef;
+}
+
+.button-footer {
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #615cfd;
+  border: 2px solid transparent;
+  margin: 30px;
+}
+
+.button-footer:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #041629;
+  border: solid 2px #d365ef;
+  transition: all 0.3s ease-in-out;
+  color: white;
 }
