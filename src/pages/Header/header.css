@@ -1,5 +1,5 @@
 .header-container {
-  padding: 20px;
+  padding: 0;
   background: linear-gradient(-45deg, #041629, #4e2d4e, #9c27b0);
   animation: infinite gradient-bg 15s linear;
   background-size: 200% 200%;
@@ -8,16 +8,28 @@
 }
 
 .header-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  margin-left: 4vw;
-  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(1fr, 50%));
+  place-items: center center;
+  margin: 0 20px;
+}
+
+.image-container {
+  clip-path: circle();
+  mix-blend-mode: overlay;
+  grid-column: 4/5;
+  grid-row: 1;
+}
+
+.text-container {
+  grid-column: 1 / 4;
 }
 
 .header-text {
-  width: 40vw;
+  display: grid;
+  grid-column: 3;
+  place-items: center center;
+  grid-template-rows: repeat(2, 1fr);
   margin-top: 4vh;
   padding: 10px;
   text-align: justify;
@@ -30,20 +42,10 @@
   color: white;
 }
 
-.contacts {
+.contact-icons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 2vh;
-}
-.contact-icon {
-  margin: 0 2rem;
-  font-size: 2vw;
-  color: white;
-}
-
-.contact-icon:hover {
-  transform: scale(1.2, 1.2);
-  cursor: pointer;
 }
 
 @keyframes gradient-bg {
@@ -82,5 +84,28 @@
   100% {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 95%, 0 100%);
     background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-grid {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  .image-container {
+    mix-blend-mode: screen hard-light;
+  }
+  .text-container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
   }
 }
