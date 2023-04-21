@@ -85,6 +85,44 @@
             }
 
         ],
+    "testimonial" : [
+        {
+            "name": "Rabindra Baisnab",
+            "position": "Intern",
+            "icon": "man.png",
+            "testimonial": "Working with Rojan was an absolute pleasure. Their expertise in frontend development helped us build a visually stunning and user-friendly website that exceeded our expectations. They were able to efficiently troubleshoot and solve any issues that arose, and their attention to detail ensured that everything was pixel-perfect. We would highly recommend Rojan to anyone looking for a skilled frontend developer."
+        },
+        {
+            "name": "Ashwin Khatiwada",
+            "position": "Intern",
+            "icon": "man.png",
+            "testimonial": "As a Java developer, Rojan has a deep understanding of the language and its frameworks. They were able to quickly grasp the requirements of our project and implement efficient solutions that met our needs. Their attention to detail and ability to write clean, maintainable code made working with them a breeze. We would definitely work with Rojan again in the future."
+        },
+        {
+            "name": "Aayush Raut",
+            "position": "Intern",
+            "icon": "man.png",
+            "testimonial": "We hired Rojan to develop an Android app for our company, and we were blown away by the quality of their work. They were able to take our initial concept and turn it into a polished, feature-rich app that our users love. Their communication throughout the process was excellent, and they were always willing to make changes and improvements based on our feedback. We would highly recommend Rojan as an Android app developer."
+        },
+        {
+            "name": "Shiba Adhikari",
+            "position": "Intern",
+            "icon": "woman.png",
+            "testimonial": "As a frontend developer, Rojan has an eye for design and a knack for creating intuitive user interfaces. They were able to take our website to the next level by implementing new features and optimizing the user experience. Their ability to work collaboratively with our team and deliver results on time and on budget was impressive. We would definitely recommend Rojan to anyone looking for a talented frontend developer."
+        },
+        {
+            "name": "Navin Chaudhary",
+            "position": "Intern",
+            "icon": "man.png",
+            "testimonial": "We were impressed with Rojan's technical skills as a Java developer. They were able to tackle complex programming challenges with ease and implement solutions that were both efficient and elegant. Their attention to detail and ability to write well-documented, maintainable code made our project a success. We would definitely work with Rojan again in the future."
+        },
+        {
+            "name": "Michael Jordan",
+            "position": "Player",
+            "icon": "man.png",
+            "testimonial": "Working with Rojan on our Android app was a great experience. They were able to translate our vision into a functioning app that looked and performed beautifully. Their ability to problem-solve and troubleshoot issues made the development process smooth and stress-free. We would highly recommend Rojan as an Android app developer to anyone looking to build a high-quality mobile app."
+        }
+        ],
     "contacts": [
         {
             "id": "facebook",
