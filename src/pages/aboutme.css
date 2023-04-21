@@ -2,6 +2,10 @@
   display: grid;
   place-items: center;
   margin: 30px 0;
+  background: linear-gradient(-45deg, #041629, #9c27b0, #04162988);
+  background-size: 150% 150%;
+  animation: infinite animateAbout 5s ease-in-out;
+  padding: 4vh 0;
   position: relative;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -9,19 +13,22 @@
 .image-about-me {
   width: 100%;
   grid-column: 4/7;
-  z-index: 1;
+  z-index: 5;
 }
 .image-about-me > img {
   width: 50%;
+  box-shadow: 0 2px 60px white;
+  animation: infinite borderAnimation 5s ease-in-out;
   border-radius: 30px;
 }
 
 .about-me-description {
   text-align: justify;
+  color: white;
   grid-row: 1;
   grid-column: 2/4;
-  width: 100%;
-  z-index: 1;
+  width: 95%;
+  z-index: 5;
 }
 
 .about-me-description > h3 {
@@ -32,10 +39,10 @@
 .background-text {
   position: absolute;
   font-size: 6vw;
-  color: aliceblue;
+  color: rgba(0, 0, 0, 0.3);
   left: 5%;
   bottom: 25%;
-  z-index: -1;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,5 +56,31 @@
 
   .background-text {
     display: none;
+  }
+}
+
+@keyframes animateAbout {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    box-shadow: 0 0px 60px yellow;
+  }
+  50% {
+    box-shadow: 0 2px 100px firebrick;
+  }
+  100% {
+    box-shadow: 0 2px 60px orange;
   }
 }
