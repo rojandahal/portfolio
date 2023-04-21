@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import Card from "../components/Cards/Card";
 import "./HomePage.css";
-import Testimonial from "../components/Testimonial/Testimonial";
+import Testimonial from "./Testimonial/Testimonial";
 import Resume from "../assets/pdf/rojan_resume.pdf";
 import Button from "../components/Buttons/Button";
 import AboutMe from "./AboutMe";
@@ -51,7 +51,7 @@ function HomePage() {
       </div>
 
       <div className="testimonial-container">
-        <Testimonial></Testimonial>
+        <Testimonial />
       </div>
     </>
   );
