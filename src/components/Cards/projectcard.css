@@ -14,26 +14,31 @@ figure {
 /* Portfolio */
 figure:nth-child(1) {
   grid-column: 3/6;
+  animation: floatingH 5s ease-in-out infinite;
 }
 /* Recipe Organizer */
 figure:nth-child(2) {
   grid-column: 7/10;
+  animation: floatingH 5s ease-in-out infinite;
 }
 /* Music Streaming */
 figure:nth-child(3) {
   grid-row: 2;
   grid-column: 3/7;
+  animation: floatingY 5s ease-in infinite;
 }
 /* Amazon Clone */
 figure:nth-child(4) {
   height: 90%;
   grid-row: 2 / 4;
   grid-column: 7/10;
+  animation: floatingH 5s ease-out infinite;
 }
 /* Food Hub app */
 figure:nth-child(5) {
   grid-row: 3/5;
   grid-column: 3/6;
+  animation: floatingY 5s ease-in infinite;
 }
 
 .image {
@@ -73,6 +78,36 @@ figure:hover .image {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: color 0.5s;
+}
+
+@keyframes floatingY {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floatingH {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-10px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @media (max-width: 900px) {
