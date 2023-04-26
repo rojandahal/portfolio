@@ -14,7 +14,7 @@ export default function AboutMe() {
           <img src={me} alt="" />
         </div>
         <div className="about-me-description">
-          <h3>Rojan Dahal</h3>
+          <h1>Rojan Dahal</h1>
           <span>
             As a computer engineering student, I have developed a strong skill
             set in full-stack development using the MERN stack and Java. With
